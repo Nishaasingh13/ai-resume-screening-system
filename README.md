@@ -1,48 +1,122 @@
-<<<<<<< HEAD
-# ai-resume-screening-system
-This project is an AI-based Resume Screening System that automatically analyzes resumes and matches them with job descriptions using Natural Language Processing (NLP) and Machine Learning.  It helps recruiters quickly identify suitable candidates and reduces manual effort.
-=======
-# 🔥 AI Resume Screening System
+🔥 AI Resume Screening System
 
-## 📌 Overview
-This project is an AI-based Resume Screening System that automatically analyzes resumes and matches them with job descriptions using Natural Language Processing (NLP) and Machine Learning.
+📌 Overview
 
-It helps recruiters quickly identify suitable candidates and reduces manual effort.
+This project is an AI-based Resume Screening System that helps automate the recruitment process by analyzing and ranking resumes based on a given job description.
+
+The system uses Natural Language Processing (NLP) and Machine Learning techniques to evaluate candidate resumes and identify the best match.
 
 ---
 
-## 🚀 Features
-- 📄 Upload Resume (PDF)
-- 🧠 Extract text from resume
-- 🔍 Detect skills from resume
-- 🎯 Match resume with job description
-- 📊 Generate Match Score (%)
-- ✅ Strong / Weak match classification
+🚀 Features
+
+- 📄 Upload multiple resumes (PDF)
+- 🧠 Automatic skill extraction
+- 🎯 Match score calculation
+- 🏆 Candidate ranking system
+- ✔ Matched skills detection
+- ❌ Missing skills identification
+- 📊 Score explanation (transparent results)
+- 📋 Resume shortlisting option
+- ⚡ Fast processing using model caching
+- 🎨 Clean and professional UI
 
 ---
 
-## 🛠️ Tech Stack
-- Python
-- Streamlit (for UI)
-- Sentence Transformers (BERT model)
-- PyPDF2 (PDF text extraction)
-- Regex (text preprocessing)
+🧠 How It Works
+
+1. User enters a Job Description
+2. Uploads multiple resumes
+3. System:
+   - Extracts text from resumes
+   - Cleans and processes text
+   - Identifies skills
+   - Compares resumes with job description
+   - Calculates match score using:
+     - Skill Matching (60%)
+     - Semantic Similarity (40%)
+4. Displays ranked candidates with scores
 
 ---
 
-## 🤖 AI Model Used
-- SentenceTransformer (`all-MiniLM-L6-v2`)
-- Converts text into embeddings
-- Calculates similarity using cosine similarity
+🛠️ Technologies Used
+
+- Python 🐍
+- Streamlit 🎨 (UI)
+- Sentence Transformers 🤖 (NLP Model)
+- PyPDF2 📄 (PDF Text Extraction)
+- Pandas 📊
 
 ---
 
-## ⚙️ How It Works
+📁 Project Structure
 
-1. User uploads a resume (PDF)
-2. System extracts text using PyPDF2
-3. Text is cleaned using regex
-4. Skills are extracted using a predefined skills database
-5. AI model compares resume with job description
-6. Hybrid score is calculated:
->>>>>>> c2675a5 (AI Resume Screening System)
+AI Resume Screening System/
+│
+├── app.py              # Main Streamlit application
+├── utils.py            # Helper functions (text extraction, cleaning, skills)
+├── skills_db.txt       # Skills database
+├── requirements.txt    # Dependencies
+└── README.md           # Project documentation
+
+---
+
+▶️ How to Run
+
+1. Clone the repository:
+
+git clone https://github.com/Nishaasingh13/ai-resume-screening-system
+cd ai-resume-screening-system
+
+2. Create virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+4. Run the application:
+
+streamlit run app.py
+
+---
+
+🎯 Use Case
+
+- HR recruitment automation
+- Resume filtering
+- Candidate ranking
+- Skill gap analysis
+
+---
+
+🔥 Future Improvements
+
+- 📄 PDF report generation
+- 🌐 Deployment on cloud
+- 🤖 Job role prediction
+- 📊 Data visualization dashboard
+- 🔐 Login system
+
+---
+
+🎤 Key Highlights
+
+- Combines rule-based + AI-based scoring
+- Provides explainable results
+- Supports multiple resume comparison
+- Designed as a real-world recruitment solution
+
+---
+
+👩‍💻 Author
+
+Nisha Singh
+GitHub: https://github.com/Nishaasingh13
+
+---
+
+⭐ If you like this project, give it a star!
